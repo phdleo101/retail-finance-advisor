@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "category": "年龄",
+      "question": "您的年龄段是？",
+      "options": [
+        {"text": "18-30岁", "score": 5},
+        {"text": "31-45岁", "score": 4},
+        {"text": "46-55岁", "score": 3},
+        {"text": "56-65岁", "score": 2},
+        {"text": "65岁以上", "score": 1}
+      ]
+    },
+    {
+      "id": 2,
+      "category": "收入",
+      "question": "您的家庭年收入大约是？",
+      "options": [
+        {"text": "10万以下", "score": 1},
+        {"text": "10-30万", "score": 2},
+        {"text": "30-50万", "score": 3},
+        {"text": "50-100万", "score": 4},
+        {"text": "100万以上", "score": 5}
+      ]
+    },
+    {
+      "id": 3,
+      "category": "投资经验",
+      "question": "您有多少年的投资理财经验？",
+      "options": [
+        {"text": "没有经验", "score": 1},
+        {"text": "1-3年", "score": 2},
+        {"text": "3-5年", "score": 3},
+        {"text": "5-10年", "score": 4},
+        {"text": "10年以上", "score": 5}
+      ]
+    },
+    {
+      "id": 4,
+      "category": "金融知识",
+      "question": "您对金融产品的了解程度？",
+      "options": [
+        {"text": "几乎不了解", "score": 1},
+        {"text": "了解基本概念（如存款、国债）", "score": 2},
+        {"text": "了解常见产品（如基金、理财）", "score": 3},
+        {"text": "熟悉多数产品（含衍生品）", "score": 4},
+        {"text": "专业级别", "score": 5}
+      ]
+    },
+    {
+      "id": 5,
+      "category": "投资目标",
+      "question": "您投资的主要目标是？",
+      "options": [
+        {"text": "保本保息，跑赢通胀即可", "score": 1},
+        {"text": "稳健增值，每年3-5%", "score": 2},
+        {"text": "平衡增长，每年5-10%", "score": 3},
+        {"text": "较高回报，每年10-15%", "score": 4},
+        {"text": "追求高回报，每年15%以上", "score": 5}
+      ]
+    },
+    {
+      "id": 6,
+      "category": "亏损承受",
+      "question": "如果您的投资亏损了10%，您会怎么做？",
+      "options": [
+        {"text": "立即全部赎回，不再投资", "score": 1},
+        {"text": "非常焦虑，考虑减仓", "score": 2},
+        {"text": "有些担心，但会观望", "score": 3},
+        {"text": "认为是机会，适当加仓", "score": 4},
+        {"text": "积极加仓，逢低买入", "score": 5}
+      ]
+    },
+    {
+      "id": 7,
+      "category": "投资期限",
+      "question": "您计划投资的资金可以锁定多长时间？",
+      "options": [
+        {"text": "随时可能需要用", "score": 1},
+        {"text": "3-6个月", "score": 2},
+        {"text": "6个月-1年", "score": 3},
+        {"text": "1-3年", "score": 4},
+        {"text": "3年以上", "score": 5}
+      ]
+    },
+    {
+      "id": 8,
+      "category": "资产占比",
+      "question": "您本次计划投资的金额占家庭总资产的比例？",
+      "options": [
+        {"text": "10%以下", "score": 5},
+        {"text": "10-20%", "score": 4},
+        {"text": "20-30%", "score": 3},
+        {"text": "30-50%", "score": 2},
+        {"text": "50%以上", "score": 1}
+      ]
+    },
+    {
+      "id": 9,
+      "category": "收益偏好",
+      "question": "以下哪种收益模式您更倾向？",
+      "options": [
+        {"text": "确定收益3%，零风险", "score": 1},
+        {"text": "预期收益5%，极小波动", "score": 2},
+        {"text": "预期收益8%，中等波动", "score": 3},
+        {"text": "预期收益12%，较大波动", "score": 4},
+        {"text": "预期收益20%，剧烈波动", "score": 5}
+      ]
+    },
+    {
+      "id": 10,
+      "category": "投资心态",
+      "question": "您如何看待投资中的风险？",
+      "options": [
+        {"text": "完全不能接受亏损", "score": 1},
+        {"text": "可接受短期小幅亏损", "score": 2},
+        {"text": "可接受中等波动换取收益", "score": 3},
+        {"text": "愿意承担较大风险博高收益", "score": 4},
+        {"text": "高风险高回报是投资本质", "score": 5}
+      ]
+    }
+  ]
+}
