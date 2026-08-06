@@ -3,8 +3,6 @@
 > [English](README_EN.md) | 中文
 
 > 基于风险测评的智能理财产品推荐与资产配置系统
->
-> **FDE作品集 项目三** — 零售金融行业 | 工具：Streamlit + Dify RAG + Plotly
 
 [![在线Demo](https://img.shields.io/badge/在线Demo-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://retail-finance-advisor-jwhilqzhrdnwwp2zzfpnue.streamlit.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-代码仓库-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/phdleo101/retail-finance-advisor)
@@ -92,15 +90,6 @@ streamlit run src/streamlit_app.py
 | 第三 | 生钱的钱 | 30% | 追求高收益 |
 | 第四 | 保本升值的钱 | 40% | 养老/教育金 |
 
-## FDE方法论
-
-| 步骤 | 内容 |
-|---|---|
-| 1. 行业速学 | 调研零售金融AI现状（2025交付元年，60%机构嵌入核心业务）|
-| 2. 痛点定位 | 产品推荐千人一面/风险测评枯燥/理财知识匮乏/配置不科学 |
-| 3. 方案设计 | 风险测评+产品匹配+RAG问答+标普四象限 |
-| 4. AI驱动构建 | Streamlit + Dify RAG + Plotly |
-| 5. 部署验证 | [Streamlit Cloud在线Demo](https://retail-finance-advisor-jwhilqzhrdnwwp2zzfpnue.streamlit.app/)已上线 |
 
 ## 项目结构
 

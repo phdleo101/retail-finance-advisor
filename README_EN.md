@@ -1,8 +1,6 @@
 # Retail Finance AI Advisor
 
 > An intelligent wealth management product recommendation and asset allocation system based on risk assessment.
->
-> **FDE Portfolio Project 3** - Retail Finance | Tools: Streamlit + Dify RAG + Plotly
 
 [![Live Demo](https://img.shields.io/badge/Demo-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://retail-finance-advisor-jwhilqzhrdnwwp2zzfpnue.streamlit.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/phdleo101/retail-finance-advisor)

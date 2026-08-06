@@ -41,7 +41,7 @@ from styles import apply_theme as apply_dark_mode
 # 侧边栏
 with st.sidebar:
     st.title("💰 零售金融智能顾问")
-    st.caption("FDE 作品集 项目三 | 零售金融行业")
+    st.caption("零售金融智能顾问")
 
     st.divider()
 
@@ -63,12 +63,8 @@ with st.sidebar:
 
     st.markdown("### 📌 关于本系统")
     st.markdown("""
-    本系统基于 **FDE 五步方法论** 构建：
-    1. 行业速学：零售金融AI现状调研
-    2. 痛点定位：理财产品推荐"千人一面"
-    3. 方案设计：风险测评+产品匹配+RAG问答
-    4. AI驱动构建：Streamlit+Dify RAG
-    5. 部署验证：Streamlit Cloud在线Demo
+    本系统为零售金融场景提供智能化理财顾问服务，
+    整合风险评估、产品智能匹配与投资知识问答功能。
 
     **合规声明**：本系统仅提供投资参考建议，
     不构成投资建议或理财产品销售。
@@ -388,4 +384,3 @@ with tab4:
 
     st.divider()
     st.caption("📊 配置方案基于标准普尔家庭资产配置模型，实际投资请咨询专业理财顾问。")
-    st.caption("🔗 本系统为 FDE 作品集项目三，仅展示技术能力，不构成投资建议。")
