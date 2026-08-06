@@ -4,6 +4,10 @@
 >
 > **FDE作品集 项目三** — 零售金融行业 | 工具：Streamlit + Dify RAG + Plotly
 
+[![在线Demo](https://img.shields.io/badge/在线Demo-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://retail-finance-advisor-jwhilqzhrdnwwp2zzfpnue.streamlit.app/)
+[![GitHub](https://img.shields.io/badge/GitHub-代码仓库-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/phdleo101/retail-finance-advisor)
+[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
+
 ## 项目简介
 
 本项目是一个零售金融智能顾问系统，通过交互式风险测评问卷评估投资者风险承受能力（C1-C5五级），基于风险等级匹配适合的理财产品（50款产品库），并通过标准普尔四象限模型生成个性化资产配置方案。
@@ -53,7 +57,13 @@ streamlit run src/streamlit_app.py
 
 ### 3. 在线Demo
 
-（部署后填写链接）
+**💰 立即体验**：[零售金融智能顾问在线Demo](https://retail-finance-advisor-jwhilqzhrdnwwp2zzfpnue.streamlit.app/)
+
+打开链接即可使用，无需注册登录。试试：
+1. 在「风险测评」Tab 完成 10 道题，获取你的 C1-C5 风险等级
+2. 在「产品推荐」Tab 查看适合你风险等级的 50 款理财产品
+3. 在「资产配置」Tab 输入投资金额，查看标准普尔四象限配置方案
+4. 在「智能问答」Tab 咨询理财产品、风险等级等金融问题
 
 ## 数据说明
 
@@ -88,7 +98,7 @@ streamlit run src/streamlit_app.py
 | 2. 痛点定位 | 产品推荐千人一面/风险测评枯燥/理财知识匮乏/配置不科学 |
 | 3. 方案设计 | 风险测评+产品匹配+RAG问答+标普四象限 |
 | 4. AI驱动构建 | Streamlit + Dify RAG + Plotly |
-| 5. 部署验证 | Streamlit Cloud在线Demo |
+| 5. 部署验证 | [Streamlit Cloud在线Demo](https://retail-finance-advisor-jwhilqzhrdnwwp2zzfpnue.streamlit.app/)已上线 |
 
 ## 项目结构
 
