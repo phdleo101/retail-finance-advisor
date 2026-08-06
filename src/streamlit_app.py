@@ -226,10 +226,10 @@ with tab2:
         recommended = [p for p in recommended if p["type"] == filter_type]
 
     if sort_by == "预期收益（高→低）":
+        import re
         def extract_return(p):
-            r = p["expected_return"]
-            nums = [float(x) for x in r.replace("%", "").replace("-", " ").replace("+", " ").split() if x.replace(".", "").isdigit()]
-            return max(nums) if nums else 0
+            nums = re.findall(r'(\d+\.?\d*)', p["expected_return"])
+            return max(float(n) for n in nums) if nums else 0
         recommended.sort(key=extract_return, reverse=True)
     elif sort_by == "起购金额（低→高）":
         recommended.sort(key=lambda p: p["min_amount"])
