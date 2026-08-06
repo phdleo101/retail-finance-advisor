@@ -2,7 +2,6 @@
 
 import json
 import time
-import functools
 import requests
 from pathlib import Path
 
@@ -20,23 +19,26 @@ KB_CONTENT = _load_kb_content()
 
 
 def _load_dify_config():
-    """从 Streamlit Secrets 读取 Dify 配置"""
+    """从 Streamlit Secrets 读取 Dify 配置
+
+    兼容两种 URL 格式：
+    - 基础 URL: https://api.dify.ai/v1 （推荐，代码自动追加 /chat-messages）
+    - 完整 URL: https://api.dify.ai/v1/chat-messages （自动去除尾部 /chat-messages）
+    """
     try:
         import streamlit as st
         if "dify" in st.secrets:
+            api_url = st.secrets["dify"].get("api_url", "")
+            # 兼容旧配置：如果 URL 已包含 /chat-messages，去除尾部
+            if api_url.endswith("/chat-messages"):
+                api_url = api_url[: -len("/chat-messages")]
             return {
-                "api_url": st.secrets["dify"].get("api_url", ""),
+                "api_url": api_url,
                 "api_key": st.secrets["dify"].get("api_key", ""),
             }
     except Exception:
         pass
     return {"api_url": "", "api_key": ""}
-
-
-@functools.lru_cache(maxsize=20)
-def _cached_query(query: str) -> str:
-    """缓存查询结果（最多20条）"""
-    return _query_dify_blocking(query)
 
 
 def _query_dify_blocking(query: str) -> str:
@@ -59,7 +61,7 @@ def _query_dify_blocking(query: str) -> str:
     for attempt in range(3):
         try:
             response = requests.post(
-                config["api_url"],
+                f"{config['api_url']}/chat-messages",
                 headers=headers,
                 json=payload,
                 timeout=(10, 90),
@@ -96,7 +98,7 @@ def _query_dify_stream(query: str):
     for attempt in range(3):
         try:
             response = requests.post(
-                config["api_url"],
+                f"{config['api_url']}/chat-messages",
                 headers=headers,
                 json=payload,
                 timeout=(10, 90),
@@ -204,8 +206,3 @@ def _local_fallback(query: str) -> str:
 def query_stream(query: str):
     """流式查询入口（生成器）"""
     yield from _query_dify_stream(query)
-
-
-def query(query: str) -> str:
-    """阻塞式查询入口"""
-    return _cached_query(query)

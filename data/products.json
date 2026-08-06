@@ -1,82 +1,726 @@
 {
   "products": [
-    {"id": "P001", "name": "活期存款", "type": "存款", "risk_level": "R1", "expected_return": "0.25%", "min_amount": 1, "term": "随时存取", "features": "随时存取，保本保息，灵活性最高", "suitable_for": "日常资金管理"},
-    {"id": "P002", "name": "定期存款-3个月", "type": "存款", "risk_level": "R1", "expected_return": "1.15%", "min_amount": 50, "term": "3个月", "features": "保本保息，存款保险保障（50万以内）", "suitable_for": "短期闲置资金"},
-    {"id": "P003", "name": "定期存款-1年", "type": "存款", "risk_level": "R1", "expected_return": "1.45%", "min_amount": 50, "term": "1年", "features": "保本保息，利率高于活期", "suitable_for": "中期储蓄"},
-    {"id": "P004", "name": "定期存款-3年", "type": "存款", "risk_level": "R1", "expected_return": "1.95%", "min_amount": 50, "term": "3年", "features": "保本保息，长期锁定利率", "suitable_for": "长期储蓄"},
-    {"id": "P005", "name": "大额存单-1年", "type": "存款", "risk_level": "R1", "expected_return": "1.80%", "min_amount": 2000, "term": "1年", "features": "20万起存，利率高于普通定期，可转让", "suitable_for": "大额资金存放"},
-    {"id": "P006", "name": "大额存单-3年", "type": "存款", "risk_level": "R1", "expected_return": "2.35%", "min_amount": 2000, "term": "3年", "features": "20万起存，长期锁定高息，可转让", "suitable_for": "大额长期储蓄"},
-    {"id": "P007", "name": "余额宝/零钱通", "type": "货币基金", "risk_level": "R1", "expected_return": "1.5-2.0%", "min_amount": 0.01, "term": "随时存取", "features": "1分起投，T+0赎回，消费支付一体化", "suitable_for": "零钱理财"},
-    {"id": "P008", "name": "银行货币基金", "type": "货币基金", "risk_level": "R1", "expected_return": "1.8-2.2%", "min_amount": 1, "term": "随时存取", "features": "低风险高流动性，T+1到账", "suitable_for": "短期资金停放"},
-    {"id": "P009", "name": "国债逆回购-7天", "type": "货币市场", "risk_level": "R1", "expected_return": "2.0-3.5%", "min_amount": 1000, "term": "7天", "features": "以国债为抵押，安全性极高，月末季末收益飙升", "suitable_for": "短期闲置资金"},
-    {"id": "P010", "name": "同业存单指数基金", "type": "货币基金", "risk_level": "R1", "expected_return": "2.2-2.5%", "min_amount": 1, "term": "随时存取", "features": "跟踪同业存单指数，收益高于货币基金", "suitable_for": "短期稳健理财"},
-
-    {"id": "P011", "name": "储蓄国债-3年", "type": "债券", "risk_level": "R2", "expected_return": "2.18%", "min_amount": 100, "term": "3年", "features": "国家信用担保，免利息税，可提前兑取", "suitable_for": "稳健型投资者"},
-    {"id": "P012", "name": "储蓄国债-5年", "type": "债券", "risk_level": "R2", "expected_return": "2.30%", "min_amount": 100, "term": "5年", "features": "国家信用担保，免利息税，长期锁定收益", "suitable_for": "长期稳健投资"},
-    {"id": "P013", "name": "银行理财R2-稳健型", "type": "银行理财", "risk_level": "R2", "expected_return": "3.0-4.0%", "min_amount": 1, "term": "3-12个月", "features": "中低风险，固收为主，净值波动小", "suitable_for": "稳健型投资者"},
-    {"id": "P014", "name": "纯债基金-短债", "type": "债券基金", "risk_level": "R2", "expected_return": "2.5-3.5%", "min_amount": 1, "term": "建议持有6个月+", "features": "投资短期债券，波动低，流动性好", "suitable_for": "短期稳健配置"},
-    {"id": "P015", "name": "纯债基金-中长债", "type": "债券基金", "risk_level": "R2", "expected_return": "3.5-5.0%", "min_amount": 1, "term": "建议持有1年+", "features": "投资中长期债券，收益较高，受利率影响", "suitable_for": "中期债券配置"},
-    {"id": "P016", "name": "同业存单基金-7天持有", "type": "债券基金", "risk_level": "R2", "expected_return": "2.3-2.8%", "min_amount": 1, "term": "7天持有期", "features": "7天持有后可赎回，收益稳定", "suitable_for": "短期资金理财"},
-    {"id": "P017", "name": "银行理财R2-日开型", "type": "银行理财", "risk_level": "R2", "expected_return": "2.8-3.5%", "min_amount": 1, "term": "每日开放", "features": "每日可申赎，固收+策略，流动性好", "suitable_for": "日常资金管理"},
-    {"id": "P018", "name": "定期理财-6个月", "type": "银行理财", "risk_level": "R2", "expected_return": "3.2-4.2%", "min_amount": 10, "term": "6个月", "features": "封闭运作，收益高于开放式，到期自动到账", "suitable_for": "中期理财"},
-    {"id": "P019", "name": "增额终身寿险", "type": "保险", "risk_level": "R2", "expected_return": "2.5-3.0%", "min_amount": 10000, "term": "长期", "features": "保额按固定利率递增，兼具保障和储蓄功能", "suitable_for": "长期规划"},
-    {"id": "P020", "name": "年金险-养老年金", "type": "保险", "risk_level": "R2", "expected_return": "2.5-3.5%", "min_amount": 10000, "term": "长期", "features": "按期领取年金，补充养老收入，锁定长期收益", "suitable_for": "养老规划"},
-
-    {"id": "P021", "name": "混合基金-偏债型", "type": "混合基金", "risk_level": "R3", "expected_return": "4.0-7.0%", "min_amount": 1, "term": "建议持有1年+", "features": "债券为主（60-80%），少量股票增强收益", "suitable_for": "平衡型投资者"},
-    {"id": "P022", "name": "混合基金-平衡型", "type": "混合基金", "risk_level": "R3", "expected_return": "5.0-9.0%", "min_amount": 1, "term": "建议持有1-3年", "features": "股债各半，攻守兼备，波动适中", "suitable_for": "平衡型投资者"},
-    {"id": "P023", "name": "混合基金-偏股型", "type": "混合基金", "risk_level": "R3", "expected_return": "6.0-12.0%", "min_amount": 1, "term": "建议持有2年+", "features": "股票为主（60-80%），债券做缓冲", "suitable_for": "进取型投资者"},
-    {"id": "P024", "name": "银行理财R3-固收+", "type": "银行理财", "risk_level": "R3", "expected_return": "3.5-5.5%", "min_amount": 1, "term": "3-12个月", "features": "固收打底+权益增强，中等风险", "suitable_for": "平衡型投资者"},
-    {"id": "P025", "name": "可转债基金", "type": "债券基金", "risk_level": "R3", "expected_return": "5.0-10.0%", "min_amount": 1, "term": "建议持有1年+", "features": "投资可转债，兼具债性和股性，波动较大", "suitable_for": "平衡型投资者"},
-    {"id": "P026", "name": "REITs-公募基础设施", "type": "其他", "risk_level": "R3", "expected_return": "4.0-8.0%", "min_amount": 100, "term": "长期", "features": "投资基础设施项目，分红稳定，场内可交易", "suitable_for": "长期配置"},
-    {"id": "P027", "name": "指数增强基金-沪深300", "type": "指数基金", "risk_level": "R3", "expected_return": "5.0-10.0%", "min_amount": 1, "term": "建议持有2年+", "features": "跟踪沪深300指数+主动增强策略", "suitable_for": "长期指数投资"},
-    {"id": "P028", "name": "FOF基金-稳健型", "type": "混合基金", "risk_level": "R3", "expected_return": "4.0-7.0%", "min_amount": 1, "term": "建议持有1年+", "features": "基金中的基金，分散投资多只基金，降低风险", "suitable_for": "平衡型投资者"},
-    {"id": "P029", "name": "券商收益凭证", "type": "银行理财", "risk_level": "R3", "expected_return": "3.5-5.0%", "min_amount": 5, "term": "3-12个月", "features": "券商信用担保，保本型可选，收益固定", "suitable_for": "中期理财"},
-    {"id": "P030", "name": "年金险-万能型", "type": "保险", "risk_level": "R3", "expected_return": "3.0-4.5%", "min_amount": 10000, "term": "长期", "features": "保底收益+浮动收益，灵活缴费", "suitable_for": "长期保障"},
-
-    {"id": "P031", "name": "股票基金-沪深300指数", "type": "股票基金", "risk_level": "R4", "expected_return": "8.0-15.0%", "min_amount": 1, "term": "建议持有3年+", "features": "跟踪大盘蓝筹股，波动较大，长期收益可观", "suitable_for": "进取型投资者"},
-    {"id": "P032", "name": "股票基金-中证500指数", "type": "股票基金", "risk_level": "R4", "expected_return": "8.0-15.0%", "min_amount": 1, "term": "建议持有3年+", "features": "跟踪中盘成长股，波动大，成长性强", "suitable_for": "进取型投资者"},
-    {"id": "P033", "name": "股票基金-消费主题", "type": "股票基金", "risk_level": "R4", "expected_return": "10.0-18.0%", "min_amount": 1, "term": "建议持有3年+", "features": "聚焦消费行业龙头，长期受益于消费升级", "suitable_for": "进取型投资者"},
-    {"id": "P034", "name": "股票基金-科技主题", "type": "股票基金", "risk_level": "R4", "expected_return": "10.0-20.0%", "min_amount": 1, "term": "建议持有3年+", "features": "聚焦科技成长股，波动大，弹性高", "suitable_for": "进取型投资者"},
-    {"id": "P035", "name": "ETF-创业板", "type": "指数基金", "risk_level": "R4", "expected_return": "10.0-18.0%", "min_amount": 100, "term": "场内交易", "features": "跟踪创业板指，成长风格，场内T+0交易", "suitable_for": "进取型投资者"},
-    {"id": "P036", "name": "ETF-科创50", "type": "指数基金", "risk_level": "R4", "expected_return": "12.0-22.0%", "min_amount": 100, "term": "场内交易", "features": "跟踪科创板50指数，硬科技方向，高波动", "suitable_for": "进取型投资者"},
-    {"id": "P037", "name": "黄金ETF", "type": "其他", "risk_level": "R4", "expected_return": "5.0-12.0%", "min_amount": 1, "term": "建议持有1年+", "features": "跟踪黄金价格，抗通胀，避险资产", "suitable_for": "资产配置分散"},
-    {"id": "P038", "name": "QDII基金-美股", "type": "股票基金", "risk_level": "R4", "expected_return": "10.0-18.0%", "min_amount": 1, "term": "建议持有2年+", "features": "投资美股市场，分散单一市场风险", "suitable_for": "全球化配置"},
-    {"id": "P039", "name": "QDII基金-全球科技", "type": "股票基金", "risk_level": "R4", "expected_return": "12.0-22.0%", "min_amount": 1, "term": "建议持有2年+", "features": "投资全球科技巨头（苹果/微软等）", "suitable_for": "进取型投资者"},
-    {"id": "P040", "name": "银行理财R4-权益增强", "type": "银行理财", "risk_level": "R4", "expected_return": "5.0-10.0%", "min_amount": 10, "term": "6-18个月", "features": "权益仓位较高，追求超额收益", "suitable_for": "进取型投资者"},
-
-    {"id": "P041", "name": "股票基金-行业主题（新能源）", "type": "股票基金", "risk_level": "R5", "expected_return": "15.0-30.0%", "min_amount": 1, "term": "建议持有3年+", "features": "聚焦新能源产业链，高波动高弹性", "suitable_for": "激进型投资者"},
-    {"id": "P042", "name": "股票基金-行业主题（医药）", "type": "股票基金", "risk_level": "R5", "expected_return": "12.0-25.0%", "min_amount": 1, "term": "建议持有3年+", "features": "聚焦医药生物行业，长期老龄化受益", "suitable_for": "激进型投资者"},
-    {"id": "P043", "name": "ETF-行业主题（半导体）", "type": "指数基金", "risk_level": "R5", "expected_return": "15.0-30.0%", "min_amount": 100, "term": "场内交易", "features": "跟踪半导体指数，周期性强，波动剧烈", "suitable_for": "激进型投资者"},
-    {"id": "P044", "name": "银行理财R5-权益类", "type": "银行理财", "risk_level": "R5", "expected_return": "8.0-20.0%", "min_amount": 10, "term": "1-3年", "features": "主要投资股票市场，波动大，可能亏损本金", "suitable_for": "激进型投资者"},
-    {"id": "P045", "name": "私募基金-股票多头", "type": "其他", "risk_level": "R5", "expected_return": "15.0-35.0%", "min_amount": 1000000, "term": "1-3年封闭", "features": "100万起投，专业管理人运作，追求绝对收益", "suitable_for": "高净值激进投资者"},
-    {"id": "P046", "name": "私募基金-量化对冲", "type": "其他", "risk_level": "R5", "expected_return": "10.0-25.0%", "min_amount": 1000000, "term": "1年封闭", "features": "100万起投，量化策略对冲风险，回撤可控", "suitable_for": "高净值激进投资者"},
-    {"id": "P047", "name": "ETF-商品（原油）", "type": "其他", "risk_level": "R5", "expected_return": "波动极大", "min_amount": 100, "term": "场内交易", "features": "跟踪国际原油价格，受地缘政治影响大", "suitable_for": "激进型投机者"},
-    {"id": "P048", "name": "ETF-加密概念", "type": "其他", "risk_level": "R5", "expected_return": "波动极大", "min_amount": 100, "term": "场内交易", "features": "投资区块链/加密货币相关概念股，极高波动", "suitable_for": "高风险承受者"},
-    {"id": "P049", "name": "结构化理财-挂钩指数", "type": "银行理财", "risk_level": "R5", "expected_return": "0-20.0%", "min_amount": 10, "term": "6-12个月", "features": "收益挂钩股票指数表现，可能零收益", "suitable_for": "激进型投资者"},
-    {"id": "P050", "name": "股票基金-新兴市场QDII", "type": "股票基金", "risk_level": "R5", "expected_return": "15.0-30.0%", "min_amount": 1, "term": "建议持有3年+", "features": "投资新兴市场（印度/越南等），高增长高波动", "suitable_for": "激进型投资者"}
+    {
+      "id": "P001",
+      "name": "活期存款",
+      "type": "存款",
+      "risk_level": "R1",
+      "expected_return": "0.25%",
+      "min_amount": 1,
+      "term": "随时存取",
+      "features": "随时存取，保本保息，灵活性最高",
+      "suitable_for": "日常资金管理",
+      "expected_return_max": 0.25
+    },
+    {
+      "id": "P002",
+      "name": "定期存款-3个月",
+      "type": "存款",
+      "risk_level": "R1",
+      "expected_return": "1.15%",
+      "min_amount": 50,
+      "term": "3个月",
+      "features": "保本保息，存款保险保障（50万以内）",
+      "suitable_for": "短期闲置资金",
+      "expected_return_max": 1.15
+    },
+    {
+      "id": "P003",
+      "name": "定期存款-1年",
+      "type": "存款",
+      "risk_level": "R1",
+      "expected_return": "1.45%",
+      "min_amount": 50,
+      "term": "1年",
+      "features": "保本保息，利率高于活期",
+      "suitable_for": "中期储蓄",
+      "expected_return_max": 1.45
+    },
+    {
+      "id": "P004",
+      "name": "定期存款-3年",
+      "type": "存款",
+      "risk_level": "R1",
+      "expected_return": "1.95%",
+      "min_amount": 50,
+      "term": "3年",
+      "features": "保本保息，长期锁定利率",
+      "suitable_for": "长期储蓄",
+      "expected_return_max": 1.95
+    },
+    {
+      "id": "P005",
+      "name": "大额存单-1年",
+      "type": "存款",
+      "risk_level": "R1",
+      "expected_return": "1.80%",
+      "min_amount": 2000,
+      "term": "1年",
+      "features": "20万起存，利率高于普通定期，可转让",
+      "suitable_for": "大额资金存放",
+      "expected_return_max": 1.8
+    },
+    {
+      "id": "P006",
+      "name": "大额存单-3年",
+      "type": "存款",
+      "risk_level": "R1",
+      "expected_return": "2.35%",
+      "min_amount": 2000,
+      "term": "3年",
+      "features": "20万起存，长期锁定高息，可转让",
+      "suitable_for": "大额长期储蓄",
+      "expected_return_max": 2.35
+    },
+    {
+      "id": "P007",
+      "name": "余额宝/零钱通",
+      "type": "货币基金",
+      "risk_level": "R1",
+      "expected_return": "1.5-2.0%",
+      "min_amount": 0.01,
+      "term": "随时存取",
+      "features": "1分起投，T+0赎回，消费支付一体化",
+      "suitable_for": "零钱理财",
+      "expected_return_max": 2.0
+    },
+    {
+      "id": "P008",
+      "name": "银行货币基金",
+      "type": "货币基金",
+      "risk_level": "R1",
+      "expected_return": "1.8-2.2%",
+      "min_amount": 1,
+      "term": "随时存取",
+      "features": "低风险高流动性，T+1到账",
+      "suitable_for": "短期资金停放",
+      "expected_return_max": 2.2
+    },
+    {
+      "id": "P009",
+      "name": "国债逆回购-7天",
+      "type": "货币市场",
+      "risk_level": "R1",
+      "expected_return": "2.0-3.5%",
+      "min_amount": 1000,
+      "term": "7天",
+      "features": "以国债为抵押，安全性极高，月末季末收益飙升",
+      "suitable_for": "短期闲置资金",
+      "expected_return_max": 3.5
+    },
+    {
+      "id": "P010",
+      "name": "同业存单指数基金",
+      "type": "货币基金",
+      "risk_level": "R1",
+      "expected_return": "2.2-2.5%",
+      "min_amount": 1,
+      "term": "随时存取",
+      "features": "跟踪同业存单指数，收益高于货币基金",
+      "suitable_for": "短期稳健理财",
+      "expected_return_max": 2.5
+    },
+    {
+      "id": "P011",
+      "name": "储蓄国债-3年",
+      "type": "债券",
+      "risk_level": "R2",
+      "expected_return": "2.18%",
+      "min_amount": 100,
+      "term": "3年",
+      "features": "国家信用担保，免利息税，可提前兑取",
+      "suitable_for": "稳健型投资者",
+      "expected_return_max": 2.18
+    },
+    {
+      "id": "P012",
+      "name": "储蓄国债-5年",
+      "type": "债券",
+      "risk_level": "R2",
+      "expected_return": "2.30%",
+      "min_amount": 100,
+      "term": "5年",
+      "features": "国家信用担保，免利息税，长期锁定收益",
+      "suitable_for": "长期稳健投资",
+      "expected_return_max": 2.3
+    },
+    {
+      "id": "P013",
+      "name": "银行理财R2-稳健型",
+      "type": "银行理财",
+      "risk_level": "R2",
+      "expected_return": "3.0-4.0%",
+      "min_amount": 1,
+      "term": "3-12个月",
+      "features": "中低风险，固收为主，净值波动小",
+      "suitable_for": "稳健型投资者",
+      "expected_return_max": 4.0
+    },
+    {
+      "id": "P014",
+      "name": "纯债基金-短债",
+      "type": "债券基金",
+      "risk_level": "R2",
+      "expected_return": "2.5-3.5%",
+      "min_amount": 1,
+      "term": "建议持有6个月+",
+      "features": "投资短期债券，波动低，流动性好",
+      "suitable_for": "短期稳健配置",
+      "expected_return_max": 3.5
+    },
+    {
+      "id": "P015",
+      "name": "纯债基金-中长债",
+      "type": "债券基金",
+      "risk_level": "R2",
+      "expected_return": "3.5-5.0%",
+      "min_amount": 1,
+      "term": "建议持有1年+",
+      "features": "投资中长期债券，收益较高，受利率影响",
+      "suitable_for": "中期债券配置",
+      "expected_return_max": 5.0
+    },
+    {
+      "id": "P016",
+      "name": "同业存单基金-7天持有",
+      "type": "债券基金",
+      "risk_level": "R2",
+      "expected_return": "2.3-2.8%",
+      "min_amount": 1,
+      "term": "7天持有期",
+      "features": "7天持有后可赎回，收益稳定",
+      "suitable_for": "短期资金理财",
+      "expected_return_max": 2.8
+    },
+    {
+      "id": "P017",
+      "name": "银行理财R2-日开型",
+      "type": "银行理财",
+      "risk_level": "R2",
+      "expected_return": "2.8-3.5%",
+      "min_amount": 1,
+      "term": "每日开放",
+      "features": "每日可申赎，固收+策略，流动性好",
+      "suitable_for": "日常资金管理",
+      "expected_return_max": 3.5
+    },
+    {
+      "id": "P018",
+      "name": "定期理财-6个月",
+      "type": "银行理财",
+      "risk_level": "R2",
+      "expected_return": "3.2-4.2%",
+      "min_amount": 10,
+      "term": "6个月",
+      "features": "封闭运作，收益高于开放式，到期自动到账",
+      "suitable_for": "中期理财",
+      "expected_return_max": 4.2
+    },
+    {
+      "id": "P019",
+      "name": "增额终身寿险",
+      "type": "保险",
+      "risk_level": "R2",
+      "expected_return": "2.5-3.0%",
+      "min_amount": 10000,
+      "term": "长期",
+      "features": "保额按固定利率递增，兼具保障和储蓄功能",
+      "suitable_for": "长期规划",
+      "expected_return_max": 3.0
+    },
+    {
+      "id": "P020",
+      "name": "年金险-养老年金",
+      "type": "保险",
+      "risk_level": "R2",
+      "expected_return": "2.5-3.5%",
+      "min_amount": 10000,
+      "term": "长期",
+      "features": "按期领取年金，补充养老收入，锁定长期收益",
+      "suitable_for": "养老规划",
+      "expected_return_max": 3.5
+    },
+    {
+      "id": "P021",
+      "name": "混合基金-偏债型",
+      "type": "混合基金",
+      "risk_level": "R3",
+      "expected_return": "4.0-7.0%",
+      "min_amount": 1,
+      "term": "建议持有1年+",
+      "features": "债券为主（60-80%），少量股票增强收益",
+      "suitable_for": "平衡型投资者",
+      "expected_return_max": 7.0
+    },
+    {
+      "id": "P022",
+      "name": "混合基金-平衡型",
+      "type": "混合基金",
+      "risk_level": "R3",
+      "expected_return": "5.0-9.0%",
+      "min_amount": 1,
+      "term": "建议持有1-3年",
+      "features": "股债各半，攻守兼备，波动适中",
+      "suitable_for": "平衡型投资者",
+      "expected_return_max": 9.0
+    },
+    {
+      "id": "P023",
+      "name": "混合基金-偏股型",
+      "type": "混合基金",
+      "risk_level": "R3",
+      "expected_return": "6.0-12.0%",
+      "min_amount": 1,
+      "term": "建议持有2年+",
+      "features": "股票为主（60-80%），债券做缓冲",
+      "suitable_for": "进取型投资者",
+      "expected_return_max": 12.0
+    },
+    {
+      "id": "P024",
+      "name": "银行理财R3-固收+",
+      "type": "银行理财",
+      "risk_level": "R3",
+      "expected_return": "3.5-5.5%",
+      "min_amount": 1,
+      "term": "3-12个月",
+      "features": "固收打底+权益增强，中等风险",
+      "suitable_for": "平衡型投资者",
+      "expected_return_max": 5.5
+    },
+    {
+      "id": "P025",
+      "name": "可转债基金",
+      "type": "债券基金",
+      "risk_level": "R3",
+      "expected_return": "5.0-10.0%",
+      "min_amount": 1,
+      "term": "建议持有1年+",
+      "features": "投资可转债，兼具债性和股性，波动较大",
+      "suitable_for": "平衡型投资者",
+      "expected_return_max": 10.0
+    },
+    {
+      "id": "P026",
+      "name": "REITs-公募基础设施",
+      "type": "其他",
+      "risk_level": "R3",
+      "expected_return": "4.0-8.0%",
+      "min_amount": 100,
+      "term": "长期",
+      "features": "投资基础设施项目，分红稳定，场内可交易",
+      "suitable_for": "长期配置",
+      "expected_return_max": 8.0
+    },
+    {
+      "id": "P027",
+      "name": "指数增强基金-沪深300",
+      "type": "指数基金",
+      "risk_level": "R3",
+      "expected_return": "5.0-10.0%",
+      "min_amount": 1,
+      "term": "建议持有2年+",
+      "features": "跟踪沪深300指数+主动增强策略",
+      "suitable_for": "长期指数投资",
+      "expected_return_max": 10.0
+    },
+    {
+      "id": "P028",
+      "name": "FOF基金-稳健型",
+      "type": "混合基金",
+      "risk_level": "R3",
+      "expected_return": "4.0-7.0%",
+      "min_amount": 1,
+      "term": "建议持有1年+",
+      "features": "基金中的基金，分散投资多只基金，降低风险",
+      "suitable_for": "平衡型投资者",
+      "expected_return_max": 7.0
+    },
+    {
+      "id": "P029",
+      "name": "券商收益凭证",
+      "type": "银行理财",
+      "risk_level": "R3",
+      "expected_return": "3.5-5.0%",
+      "min_amount": 5,
+      "term": "3-12个月",
+      "features": "券商信用担保，保本型可选，收益固定",
+      "suitable_for": "中期理财",
+      "expected_return_max": 5.0
+    },
+    {
+      "id": "P030",
+      "name": "年金险-万能型",
+      "type": "保险",
+      "risk_level": "R3",
+      "expected_return": "3.0-4.5%",
+      "min_amount": 10000,
+      "term": "长期",
+      "features": "保底收益+浮动收益，灵活缴费",
+      "suitable_for": "长期保障",
+      "expected_return_max": 4.5
+    },
+    {
+      "id": "P031",
+      "name": "股票基金-沪深300指数",
+      "type": "股票基金",
+      "risk_level": "R4",
+      "expected_return": "8.0-15.0%",
+      "min_amount": 1,
+      "term": "建议持有3年+",
+      "features": "跟踪大盘蓝筹股，波动较大，长期收益可观",
+      "suitable_for": "进取型投资者",
+      "expected_return_max": 15.0
+    },
+    {
+      "id": "P032",
+      "name": "股票基金-中证500指数",
+      "type": "股票基金",
+      "risk_level": "R4",
+      "expected_return": "8.0-15.0%",
+      "min_amount": 1,
+      "term": "建议持有3年+",
+      "features": "跟踪中盘成长股，波动大，成长性强",
+      "suitable_for": "进取型投资者",
+      "expected_return_max": 15.0
+    },
+    {
+      "id": "P033",
+      "name": "股票基金-消费主题",
+      "type": "股票基金",
+      "risk_level": "R4",
+      "expected_return": "10.0-18.0%",
+      "min_amount": 1,
+      "term": "建议持有3年+",
+      "features": "聚焦消费行业龙头，长期受益于消费升级",
+      "suitable_for": "进取型投资者",
+      "expected_return_max": 18.0
+    },
+    {
+      "id": "P034",
+      "name": "股票基金-科技主题",
+      "type": "股票基金",
+      "risk_level": "R4",
+      "expected_return": "10.0-20.0%",
+      "min_amount": 1,
+      "term": "建议持有3年+",
+      "features": "聚焦科技成长股，波动大，弹性高",
+      "suitable_for": "进取型投资者",
+      "expected_return_max": 20.0
+    },
+    {
+      "id": "P035",
+      "name": "ETF-创业板",
+      "type": "指数基金",
+      "risk_level": "R4",
+      "expected_return": "10.0-18.0%",
+      "min_amount": 100,
+      "term": "场内交易",
+      "features": "跟踪创业板指，成长风格，场内T+0交易",
+      "suitable_for": "进取型投资者",
+      "expected_return_max": 18.0
+    },
+    {
+      "id": "P036",
+      "name": "ETF-科创50",
+      "type": "指数基金",
+      "risk_level": "R4",
+      "expected_return": "12.0-22.0%",
+      "min_amount": 100,
+      "term": "场内交易",
+      "features": "跟踪科创板50指数，硬科技方向，高波动",
+      "suitable_for": "进取型投资者",
+      "expected_return_max": 22.0
+    },
+    {
+      "id": "P037",
+      "name": "黄金ETF",
+      "type": "其他",
+      "risk_level": "R4",
+      "expected_return": "5.0-12.0%",
+      "min_amount": 1,
+      "term": "建议持有1年+",
+      "features": "跟踪黄金价格，抗通胀，避险资产",
+      "suitable_for": "资产配置分散",
+      "expected_return_max": 12.0
+    },
+    {
+      "id": "P038",
+      "name": "QDII基金-美股",
+      "type": "股票基金",
+      "risk_level": "R4",
+      "expected_return": "10.0-18.0%",
+      "min_amount": 1,
+      "term": "建议持有2年+",
+      "features": "投资美股市场，分散单一市场风险",
+      "suitable_for": "全球化配置",
+      "expected_return_max": 18.0
+    },
+    {
+      "id": "P039",
+      "name": "QDII基金-全球科技",
+      "type": "股票基金",
+      "risk_level": "R4",
+      "expected_return": "12.0-22.0%",
+      "min_amount": 1,
+      "term": "建议持有2年+",
+      "features": "投资全球科技巨头（苹果/微软等）",
+      "suitable_for": "进取型投资者",
+      "expected_return_max": 22.0
+    },
+    {
+      "id": "P040",
+      "name": "银行理财R4-权益增强",
+      "type": "银行理财",
+      "risk_level": "R4",
+      "expected_return": "5.0-10.0%",
+      "min_amount": 10,
+      "term": "6-18个月",
+      "features": "权益仓位较高，追求超额收益",
+      "suitable_for": "进取型投资者",
+      "expected_return_max": 10.0
+    },
+    {
+      "id": "P041",
+      "name": "股票基金-行业主题（新能源）",
+      "type": "股票基金",
+      "risk_level": "R5",
+      "expected_return": "15.0-30.0%",
+      "min_amount": 1,
+      "term": "建议持有3年+",
+      "features": "聚焦新能源产业链，高波动高弹性",
+      "suitable_for": "激进型投资者",
+      "expected_return_max": 30.0
+    },
+    {
+      "id": "P042",
+      "name": "股票基金-行业主题（医药）",
+      "type": "股票基金",
+      "risk_level": "R5",
+      "expected_return": "12.0-25.0%",
+      "min_amount": 1,
+      "term": "建议持有3年+",
+      "features": "聚焦医药生物行业，长期老龄化受益",
+      "suitable_for": "激进型投资者",
+      "expected_return_max": 25.0
+    },
+    {
+      "id": "P043",
+      "name": "ETF-行业主题（半导体）",
+      "type": "指数基金",
+      "risk_level": "R5",
+      "expected_return": "15.0-30.0%",
+      "min_amount": 100,
+      "term": "场内交易",
+      "features": "跟踪半导体指数，周期性强，波动剧烈",
+      "suitable_for": "激进型投资者",
+      "expected_return_max": 30.0
+    },
+    {
+      "id": "P044",
+      "name": "银行理财R5-权益类",
+      "type": "银行理财",
+      "risk_level": "R5",
+      "expected_return": "8.0-20.0%",
+      "min_amount": 10,
+      "term": "1-3年",
+      "features": "主要投资股票市场，波动大，可能亏损本金",
+      "suitable_for": "激进型投资者",
+      "expected_return_max": 20.0
+    },
+    {
+      "id": "P045",
+      "name": "私募基金-股票多头",
+      "type": "其他",
+      "risk_level": "R5",
+      "expected_return": "15.0-35.0%",
+      "min_amount": 1000000,
+      "term": "1-3年封闭",
+      "features": "100万起投，专业管理人运作，追求绝对收益",
+      "suitable_for": "高净值激进投资者",
+      "expected_return_max": 35.0
+    },
+    {
+      "id": "P046",
+      "name": "私募基金-量化对冲",
+      "type": "其他",
+      "risk_level": "R5",
+      "expected_return": "10.0-25.0%",
+      "min_amount": 1000000,
+      "term": "1年封闭",
+      "features": "100万起投，量化策略对冲风险，回撤可控",
+      "suitable_for": "高净值激进投资者",
+      "expected_return_max": 25.0
+    },
+    {
+      "id": "P047",
+      "name": "ETF-商品（原油）",
+      "type": "其他",
+      "risk_level": "R5",
+      "expected_return": "波动极大",
+      "min_amount": 100,
+      "term": "场内交易",
+      "features": "跟踪国际原油价格，受地缘政治影响大",
+      "suitable_for": "激进型投机者",
+      "expected_return_max": 0.0
+    },
+    {
+      "id": "P048",
+      "name": "ETF-加密概念",
+      "type": "其他",
+      "risk_level": "R5",
+      "expected_return": "波动极大",
+      "min_amount": 100,
+      "term": "场内交易",
+      "features": "投资区块链/加密货币相关概念股，极高波动",
+      "suitable_for": "高风险承受者",
+      "expected_return_max": 0.0
+    },
+    {
+      "id": "P049",
+      "name": "结构化理财-挂钩指数",
+      "type": "银行理财",
+      "risk_level": "R5",
+      "expected_return": "0-20.0%",
+      "min_amount": 10,
+      "term": "6-12个月",
+      "features": "收益挂钩股票指数表现，可能零收益",
+      "suitable_for": "激进型投资者",
+      "expected_return_max": 20.0
+    },
+    {
+      "id": "P050",
+      "name": "股票基金-新兴市场QDII",
+      "type": "股票基金",
+      "risk_level": "R5",
+      "expected_return": "15.0-30.0%",
+      "min_amount": 1,
+      "term": "建议持有3年+",
+      "features": "投资新兴市场（印度/越南等），高增长高波动",
+      "suitable_for": "激进型投资者",
+      "expected_return_max": 30.0
+    }
   ],
   "risk_levels": {
-    "R1": {"name": "低风险", "description": "本金安全，收益稳定，流动性高", "color": "#27AE60"},
-    "R2": {"name": "中低风险", "description": "本金较安全，收益略高于存款，波动较小", "color": "#2ECC71"},
-    "R3": {"name": "中风险", "description": "收益与波动适中，可能短期浮亏", "color": "#F39C12"},
-    "R4": {"name": "中高风险", "description": "追求较高收益，波动较大，可能亏损", "color": "#E67E22"},
-    "R5": {"name": "高风险", "description": "追求高收益，波动剧烈，可能大幅亏损", "color": "#E74C3C"}
+    "R1": {
+      "name": "低风险",
+      "description": "本金安全，收益稳定，流动性高",
+      "color": "#27AE60"
+    },
+    "R2": {
+      "name": "中低风险",
+      "description": "本金较安全，收益略高于存款，波动较小",
+      "color": "#2ECC71"
+    },
+    "R3": {
+      "name": "中风险",
+      "description": "收益与波动适中，可能短期浮亏",
+      "color": "#F39C12"
+    },
+    "R4": {
+      "name": "中高风险",
+      "description": "追求较高收益，波动较大，可能亏损",
+      "color": "#E67E22"
+    },
+    "R5": {
+      "name": "高风险",
+      "description": "追求高收益，波动剧烈，可能大幅亏损",
+      "color": "#E74C3C"
+    }
   },
   "investor_types": {
-    "C1": {"name": "保守型", "risk_range": "R1", "description": "追求保本保息，不能接受任何亏损", "allocation": {"日常": 20, "保障": 40, "增值": 30, "保本": 10}},
-    "C2": {"name": "稳健型", "risk_range": "R1-R2", "description": "追求稳健收益，可接受极小幅波动", "allocation": {"日常": 15, "保障": 30, "增值": 40, "保本": 15}},
-    "C3": {"name": "平衡型", "risk_range": "R1-R3", "description": "追求收益与风险的平衡", "allocation": {"日常": 10, "保障": 25, "增值": 40, "保本": 25}},
-    "C4": {"name": "进取型", "risk_range": "R1-R4", "description": "追求较高收益，可承受较大波动", "allocation": {"日常": 10, "保障": 15, "增值": 50, "保本": 25}},
-    "C5": {"name": "激进型", "risk_range": "R1-R5", "description": "追求高收益，可承受大幅亏损", "allocation": {"日常": 5, "保障": 10, "增值": 60, "保本": 25}}
+    "C1": {
+      "name": "保守型",
+      "risk_range": "R1",
+      "description": "追求保本保息，不能接受任何亏损",
+      "allocation": {
+        "日常": 20,
+        "保障": 40,
+        "增值": 30,
+        "保本": 10
+      }
+    },
+    "C2": {
+      "name": "稳健型",
+      "risk_range": "R1-R2",
+      "description": "追求稳健收益，可接受极小幅波动",
+      "allocation": {
+        "日常": 15,
+        "保障": 30,
+        "增值": 40,
+        "保本": 15
+      }
+    },
+    "C3": {
+      "name": "平衡型",
+      "risk_range": "R1-R3",
+      "description": "追求收益与风险的平衡",
+      "allocation": {
+        "日常": 10,
+        "保障": 25,
+        "增值": 40,
+        "保本": 25
+      }
+    },
+    "C4": {
+      "name": "进取型",
+      "risk_range": "R1-R4",
+      "description": "追求较高收益，可承受较大波动",
+      "allocation": {
+        "日常": 10,
+        "保障": 15,
+        "增值": 50,
+        "保本": 25
+      }
+    },
+    "C5": {
+      "name": "激进型",
+      "risk_range": "R1-R5",
+      "description": "追求高收益，可承受大幅亏损",
+      "allocation": {
+        "日常": 5,
+        "保障": 10,
+        "增值": 60,
+        "保本": 25
+      }
+    }
   },
   "standard_poor_model": {
     "name": "标准普尔家庭资产配置四象限",
     "description": "将家庭资产按用途分为四个账户，实现合理配置",
     "quadrants": [
-      {"name": "日常开销账户", "label": "要花的钱", "ratio": 10, "description": "3-6个月生活费，用于衣食住行等日常开支", "products": "活期存款、货币基金", "risk": "R1"},
-      {"name": "杠杆保障账户", "label": "保命的钱", "ratio": 20, "description": "意外重疾保障，以小博大，专款专用", "products": "意外险、重疾险、医疗险", "risk": "保障型"},
-      {"name": "投资收益账户", "label": "生钱的钱", "ratio": 30, "description": "追求高收益，创造财富增长", "products": "股票基金、指数基金、混合基金", "risk": "R3-R5"},
-      {"name": "长期收益账户", "label": "保本升值的钱", "ratio": 40, "description": "养老金、子女教育金，确保本金安全", "products": "国债、年金险、增额终身寿", "risk": "R1-R2"}
+      {
+        "name": "日常开销账户",
+        "label": "要花的钱",
+        "ratio": 10,
+        "description": "3-6个月生活费，用于衣食住行等日常开支",
+        "products": "活期存款、货币基金",
+        "risk": "R1"
+      },
+      {
+        "name": "杠杆保障账户",
+        "label": "保命的钱",
+        "ratio": 20,
+        "description": "意外重疾保障，以小博大，专款专用",
+        "products": "意外险、重疾险、医疗险",
+        "risk": "保障型"
+      },
+      {
+        "name": "投资收益账户",
+        "label": "生钱的钱",
+        "ratio": 30,
+        "description": "追求高收益，创造财富增长",
+        "products": "股票基金、指数基金、混合基金",
+        "risk": "R3-R5"
+      },
+      {
+        "name": "长期收益账户",
+        "label": "保本升值的钱",
+        "ratio": 40,
+        "description": "养老金、子女教育金，确保本金安全",
+        "products": "国债、年金险、增额终身寿",
+        "risk": "R1-R2"
+      }
     ]
   }
 }

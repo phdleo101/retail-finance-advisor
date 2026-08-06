@@ -1,5 +1,7 @@
 # 零售金融智能顾问 (Retail Finance AI Advisor)
 
+> [English](README_EN.md) | 中文
+
 > 基于风险测评的智能理财产品推荐与资产配置系统
 >
 > **FDE作品集 项目三** — 零售金融行业 | 工具：Streamlit + Dify RAG + Plotly

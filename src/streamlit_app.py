@@ -35,30 +35,7 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# 暗黑模式
-def apply_dark_mode(dark: bool):
-    if dark:
-        st.markdown("""
-        <style>
-        .stApp { background-color: #0e1117; color: #fafafa; }
-        .stSidebar { background-color: #161b22; }
-        .stMarkdown, .stText, p, span, li { color: #fafafa !important; }
-        .stButton > button { background-color: #21262d; color: #fafafa; border-color: #30363d; }
-        .stButton > button:hover { background-color: #30363d; border-color: #58a6ff; }
-        .stTabs [data-baseweb="tab-list"] { background-color: #161b22; }
-        .stTabs [data-baseweb="tab"] { color: #8b949e; }
-        .stTabs [aria-selected="true"] { color: #58a6ff !important; }
-        .stMetric { background-color: #161b22; padding: 10px; border-radius: 8px; border: 1px solid #30363d; }
-        .stMetric label { color: #8b949e !important; }
-        .stMetric value { color: #58a6ff !important; }
-        </style>
-        """, unsafe_allow_html=True)
-    else:
-        st.markdown("""
-        <style>
-        .stMetric { background-color: #f8f9fa; padding: 10px; border-radius: 8px; border: 1px solid #e9ecef; }
-        </style>
-        """, unsafe_allow_html=True)
+from styles import apply_theme as apply_dark_mode
 
 
 # 侧边栏
@@ -226,11 +203,7 @@ with tab2:
         recommended = [p for p in recommended if p["type"] == filter_type]
 
     if sort_by == "预期收益（高→低）":
-        import re
-        def extract_return(p):
-            nums = re.findall(r'(\d+\.?\d*)', p["expected_return"])
-            return max(float(n) for n in nums) if nums else 0
-        recommended.sort(key=extract_return, reverse=True)
+        recommended.sort(key=lambda p: p.get("expected_return_max", 0), reverse=True)
     elif sort_by == "起购金额（低→高）":
         recommended.sort(key=lambda p: p["min_amount"])
 
